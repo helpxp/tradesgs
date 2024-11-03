@@ -1,5 +1,20 @@
 <!DOCTYPE html><html lang="es" dir="ltr" class="html"><head>
-
+<script>
+                window.geo_country_state = 'PE_LMA';
+                window.geo_country = 'PE';
+                window.geo_state = 'LMA';
+                function appendOneTrust() {
+                    return new Promise((resolve, reject) => {
+                        const script = document.createElement('script');
+                        script.src = 'https://cookie-cdn.cookiepro.com/scripttemplates/otSDKStub.js';
+                        script.setAttribute('amp', 'true');
+                        script.dataset.domainScript = '265d5ac2-7d0c-4675-bf4d-421a61fb482e';
+                        script.onload = resolve;
+                        script.onerror = reject;
+                        document.body.appendChild(script);
+                    });
+                }
+            </script>
 </head>
 <body>
 
